@@ -1,8 +1,84 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-}
 
-<div class="text-center">
-    <h1 class="display-4">Welcome2</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+}
+    <div class="text-center my-form">
+        <img src="~/img/engineering icon.png" class="rounded" alt="Cinque Terre" width="180" height="210" > 
+    </div>
+    <h1 class="text-center">ระบบครุภัณฑ์</h1>&nbsp&nbsp
+    <main class="my-form">
+        <div class="container">
+            <div class="d-flex justify-content-center h-200">
+                <div class="card">
+                    &nbsp
+                    <h3 class="text-center">เข้าสู่ระบบ</h3>&nbsp&nbsp&nbsp
+                    <h5 class="text-center">สำหรับเจ้าหน้าที่/อาจารย์/คณะบดี</h5>
+                    <h5 class="text-center">[กรุณาใส่ Email@eng.src.ku.ac.th]</h5>
+                    &nbsp
+                    <div class="form-group d-flex justify-content-center">
+                        <button type='button' class="btn login_btn" ><img src="~/img/google.jpg" class="icon rounded-circle" ></img> Sign in with Google</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<link rel="stylesheet" href="~/css/bootstrap.min.css">
+<style>
+        html, body {
+            margin: 0;
+            font-size: .9rem;
+            font-family: 'Itim', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #212529;
+            height: 100%;
+            text-align: left;
+            background-color: #FFFFFF;
+        }
+
+        .container {
+            height: 100%;
+            align-content: center;
+        }
+
+        .card {
+            height: 250px;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 350px;
+            background-color: rgba(253, 250, 250, 0.5) !important;
+            font-family: 'Itim', sans-serif;
+        }
+
+        /* Detail button */
+        .login_btn {
+            color: black;
+            background-color: white;
+            border:2px solid;
+            border-radius:2rem;
+            width: 240px;
+            height: 40px;
+        }
+
+            .login_btn:hover {
+                color: black;
+                background-color: white;
+            }
+
+
+        .my-form
+        {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        /* define icon */
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+            width: 31px;
+            height: 31px;
+        }
+
+</style>
