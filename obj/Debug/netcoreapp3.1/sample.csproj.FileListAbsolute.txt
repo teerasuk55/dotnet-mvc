@@ -36,3 +36,4 @@ D:\sample\obj\Debug\netcoreapp3.1\sample.pdb
 D:\sample\obj\Debug\netcoreapp3.1\sample.genruntimeconfig.cache
 D:\sample\obj\Debug\netcoreapp3.1\sample.csproj.CopyComplete
 D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\history.cshtml.g.cs
+D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutUser.cshtml.g.cs
