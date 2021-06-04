@@ -1,0 +1,138 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    ViewData["Title"] = "Addform";   
+}
+    &nbsp&nbsp
+    <div class="card ">
+            <div class="card-header">
+                <h3 class="card-title">แบบฟอร์มคำขออนุมัติไปปฏิบัติงานโดยไม่ขอเบิกค่าใช้จ่าย</h3>
+            </div>
+            <form>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="Number">หมายเลขเอกสารที่</label>
+                        <input type="text" class="form-control" id="Number" placeholder="หมายเลขเอกสารที่" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">ชื่อ - สกุล</label>
+                        <input type="text" class="form-control" id="Name" placeholder="ชื่อ - นามสกุล">
+                    </div>
+                    <div class="form-group">
+                        <label for="Rank">ตำแหน่ง</label>
+                        <input type="text" class="form-control" id="Rank" placeholder="ตำแหน่ง">
+                    </div>
+                    <div class="form-group">
+                        <label for="Where">เดินทางไปปฏิบัติงานที่</label>
+                        <input type="text" class="form-control" id="Where" placeholder="เดินทางไปปฏิบัติงานที่">
+                    </div>
+                    <div class="form-group">
+                        <label for="District">อำเภอ</label>
+                        <input type="text" class="form-control" id="District" placeholder="อำเภอ">
+                    </div>
+                    <div class="form-group">
+                        <label for="Province">จังหวัด</label>
+                        <input type="text" class="form-control" id="Province" placeholder="จังหวัด">
+                    </div>
+                    <div class="form-group">
+                        <label>ตั้งแต่วันที่(เดือน/วัน/ปี)</label>
+                        <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" placeholder="เดือน/วัน/ปี"/>
+                            <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>ถึงวันที่(เดือน/วัน/ปี)</label>
+                        <div class="input-group date" id="reservationdate1" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate1" placeholder="เดือน/วัน/ปี"/>
+                            <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Total">รวมเป็นเวลา</label>
+                        <input type="text" class="form-control" id="Total" placeholder="รวมเป็นเวลา">
+                    </div>
+                    <div class="form-group">
+                        <label for="Reason">เหตุผล</label>
+                        <input type="text" class="form-control" id="Reason" placeholder="เหตุผล">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">เอกสารเพิ่มเติม</label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="exampleInputFile">
+                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-success">บันทึก</button>
+                <button type="button" class="btn btn-danger">ยกเลิก</button>
+            </div>
+        </div>
+@section Styles
+{
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="~/adminlte/plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="~/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="~/adminlte/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="~/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/adminlte/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="~/adminlte/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="~/adminlte/plugins/bs-stepper/css/bs-stepper.min.css">
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="~/adminlte/plugins/dropzone/min/dropzone.min.css">
+}
+
+@section Scripts
+{
+    <!-- bs-custom-file-input -->
+    <script src="~/adminlte/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <!-- Select2 -->
+    <script src="~/adminlte/plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="~/adminlte/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="~/adminlte/plugins/moment/moment.min.js"></script>
+    <script src="~/adminlte/plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="~/adminlte/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="~/adminlte/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="~/adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="~/adminlte/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="~/adminlte/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+    <!-- dropzonejs -->
+    <script src="~/adminlte/plugins/dropzone/min/dropzone.min.js"></script>
+    <script>
+        $(function () {
+            bsCustomFileInput.init();
+        });
+        $(function () {
+            //Date picker
+            $('#reservationdate').datetimepicker({
+                format: 'L'
+            });
+            //Date picker 1
+            $('#reservationdate1').datetimepicker({
+                format: 'L'
+            });
+        });
+    </script>
+
+}

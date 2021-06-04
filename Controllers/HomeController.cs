@@ -22,13 +22,26 @@ namespace sample.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult History()
+        {
+            return View();
+        }
+        public IActionResult Addform()
         {
             return View();
         }
 
-        public IActionResult History()
+        public IActionResult Editform()
+        {
+            return View();
+        }
+
+        public IActionResult Endform()
+        {
+            return View();
+        }
+
+        public IActionResult Adminform()
         {
             return View();
         }
