@@ -1,10 +1,10 @@
 @{
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
-    ViewData["Title"] = "Editform";  
+    ViewData["Title"] = "Form";  
 }
-
-        &nbsp&nbsp
-        <div class="card ">
+    
+    &nbsp&nbsp
+    <div class="card ">
             <div class="card-header">
                 <h3 class="card-title">แบบฟอร์มคำขออนุมัติไปปฏิบัติงานโดยไม่ขอเบิกค่าใช้จ่าย</h3>
             </div>
@@ -16,28 +16,28 @@
                     </div>
                     <div class="form-group">
                         <label for="Name">ชื่อ - สกุล</label>
-                        <input type="text" class="form-control" id="Name" placeholder="ชื่อ - นามสกุล">
+                        <input type="text" class="form-control" id="Name" placeholder="ชื่อ - นามสกุล" disabled>
                     </div>
                     <div class="form-group">
                         <label for="Rank">ตำแหน่ง</label>
-                        <input type="text" class="form-control" id="Rank" placeholder="ตำแหน่ง">
+                        <input type="text" class="form-control" id="Rank" placeholder="ตำแหน่ง" disabled>
                     </div>
                     <div class="form-group">
                         <label for="Where">เดินทางไปปฏิบัติงานที่</label>
-                        <input type="text" class="form-control" id="Where" placeholder="เดินทางไปปฏิบัติงานที่">
+                        <input type="text" class="form-control" id="Where" placeholder="เดินทางไปปฏิบัติงานที่" disabled>
                     </div>
                     <div class="form-group">
                         <label for="District">อำเภอ</label>
-                        <input type="text" class="form-control" id="District" placeholder="อำเภอ">
+                        <input type="text" class="form-control" id="District" placeholder="อำเภอ" disabled>
                     </div>
                     <div class="form-group">
                         <label for="Province">จังหวัด</label>
-                        <input type="text" class="form-control" id="Province" placeholder="จังหวัด">
+                        <input type="text" class="form-control" id="Province" placeholder="จังหวัด" disabled>
                     </div>
                     <div class="form-group">
                         <label>ตั้งแต่วันที่(เดือน/วัน/ปี)</label>
                         <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" placeholder="เดือน/วัน/ปี"/>
+                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" placeholder="เดือน/วัน/ปี" disabled/>
                             <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
                                 <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                             </div>
@@ -46,7 +46,7 @@
                     <div class="form-group">
                         <label>ถึงวันที่(เดือน/วัน/ปี)</label>
                         <div class="input-group date" id="reservationdate1" data-target-input="nearest">
-                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate1" placeholder="เดือน/วัน/ปี"/>
+                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate1" placeholder="เดือน/วัน/ปี" disabled/>
                             <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
                                 <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                             </div>
@@ -54,17 +54,17 @@
                     </div>
                     <div class="form-group">
                         <label for="Total">รวมเป็นเวลา</label>
-                        <input type="text" class="form-control" id="Total" placeholder="รวมเป็นเวลา">
+                        <input type="text" class="form-control" id="Total" placeholder="รวมเป็นเวลา" disabled>
                     </div>
                     <div class="form-group">
                         <label for="Reason">เหตุผล</label>
-                        <input type="text" class="form-control" id="Reason" placeholder="เหตุผล">
+                        <input type="text" class="form-control" id="Reason" placeholder="เหตุผล" disabled>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputFile">เอกสารเพิ่มเติม</label>
                         <div class="input-group">
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="exampleInputFile">
+                                <input type="file" class="custom-file-input" id="exampleInputFile" disabled>
                                 <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                             </div>
                             <div class="input-group-append">
@@ -74,10 +74,9 @@
                     </div>
                 </div>
             </form>
-            <div class="card-footer">
-                <button type="submit" class="btn btn-success">บันทึก</button>
-                <a class="btn btn-danger" asp-controller="Home" asp-action="History">ยกเลิก</a>
-            </div>
+            @* <div class="card-footer">
+                <a type="submit" class="btn btn-warning"><i class="fas fa-window-close"></i>  ยกเลิกแบบฟอร์ม</a>
+            </div> *@
         </div>
 
 @section Styles

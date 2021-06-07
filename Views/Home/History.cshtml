@@ -9,6 +9,8 @@
                     <tr>
                         <th>เลขที่เอกสาร</th>
                         <th>วันที่กรอกแบบฟอร์ม</th>
+                        <th>วันที่อัพเดตแบบฟอร์มล่าสุด</th>
+                        <th>สถานะแบบฟอร์ม</th>
                         <th>สถานะการตรวจสอบ</th>
                         <th>สถานะการตอบรับจากหัวหน้าภาควิชา</th>
                         <th>สถานะการตอบรับจากคณบดี</th>
@@ -16,24 +18,39 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Rendering</td>
-                        <td>Browser</td>
-                        <td>Platform(s)</td>
-                        <td>Engine version</td>
-                        <td>CSS grade</td>
+                        <td><a class="text-info" asp-controller="Home" asp-action="Editform">00000000</a></td>
+                        <td>06/02/2021</td>
+                        <td>04/02/2021</td>
+                        <td><div class="text-danger">ไม่ผ่าน</div></td>
+                        <td><div class="text-success">ผ่าน</div></td>
+                        <td><div class="text-success">อนุมัติ</div></td>
+                        <td><div class="text-danger">ไม่อนุมัติ</div></td>
                     </tr>
                     <tr>
-                        <td>Presto</td>
-                        <td>Opera 9.5</td>
-                        <td>Win 88+ / OSX.3+</td>
-                        <td>-</td>
-                        <td>A</td>
+                        <td><a class="text-info" asp-controller="Home" asp-action="Form">22222222</a></td>
+                        <td>06/03/2021</td>
+                        <td>04/03/2021</td>
+                        <td><div class="text-success">ผ่าน</div></td>
+                        <td><div class="text-success">ผ่าน</div></td>
+                        <td><div class="text-success">อนุมัติ</div></td>
+                        <td><div class="text-success">อนุมัติ</div></td>
+                    </tr>
+                    <tr>
+                        <td><a class="text-info" asp-controller="Home" asp-action="Endform">22222222</a></td>
+                        <td>06/04/2021</td>
+                        <td>04/04/2021</td>
+                        <td><div class="text-secondary">รอการตรวจสอบจากเจ้าหน้าที่</div></td>
+                        <td><div class="text-secondary">ยังไม่ผ่านการตรวจสอบ</div></td>
+                        <td><div class="text-secondary">ยังไม่อนุมัติ</div></td>
+                        <td><div class="text-secondary">ยังไม่อนุมัติ</div></td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
                         <th>เลขที่เอกสาร</th>
                         <th>วันที่กรอกแบบฟอร์ม</th>
+                        <th>วันที่อัพเดตแบบฟอร์มล่าสุด</th>
+                        <th>สถานะแบบฟอร์ม</th>
                         <th>สถานะการตรวจสอบ</th>
                         <th>สถานะการตอบรับจากหัวหน้าภาควิชา</th>
                         <th>สถานะการตอบรับจากคณบดี</th>
