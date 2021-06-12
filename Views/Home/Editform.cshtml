@@ -15,12 +15,19 @@
                         <input type="text" class="form-control" id="Number" placeholder="หมายเลขเอกสารที่" disabled>
                     </div>
                     <div class="form-group">
-                        <label for="Name">ชื่อ - สกุล</label>
-                        <input type="text" class="form-control" id="Name" placeholder="ชื่อ - นามสกุล">
-                    </div>
-                    <div class="form-group">
-                        <label for="Rank">ตำแหน่ง</label>
-                        <input type="text" class="form-control" id="Rank" placeholder="ตำแหน่ง">
+                        <label for="Name">รายชื่อ</label>
+                        <div id="inputFormRow">
+                            <div class="input-group mb-2">
+                                <input type="text" name="Name[]" class="form-control m-input" placeholder="ชื่อ - สกุล" autocomplete="off">
+                                <input type="text" name="Rank[]" class="form-control m-input" placeholder="ตำแหน่ง" autocomplete="off">
+                                <div class="input-group-append">                
+                                    <button id="removeRow" type="button" class="btn btn-danger">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="newRow"></div>
+                        <button id="addRow" type="button" class="btn btn-info">Add Row</button>
                     </div>
                     <div class="form-group">
                         <label for="Where">เดินทางไปปฏิบัติงานที่</label>
@@ -28,7 +35,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Province">จังหวัด</label>
-                        <select class="form-control" id="District">
+                        <select class="form-control select2bs4" id="Province" style="width: 100%;">
                             <option selected>เลือกจังหวัด...</option>
                             <option value="1">หนึ่ง</option>
                             <option value="2">สอง</option>
@@ -39,7 +46,7 @@
                     </div>
                     <div class="form-group">
                         <label for="District">อำเภอ</label>
-                        <select class="form-control" id="District">
+                        <select class="form-control select2bs4" id="District" style="width: 100%;">
                             <option selected>เลือกอำเภอ...</option>
                             <option value="1">หนึ่ง</option>
                             <option value="2">สอง</option>
@@ -50,7 +57,7 @@
                     </div>
                     <div class="form-group">
                         <label for="Tumbon">ตำบล</label>
-                        <select class="form-control" id="Tumbon">
+                        <select class="form-control select2bs4" id="Tumbon" style="width: 100%;">
                             <option selected>เลือกตำบล...</option>
                             <option value="1">หนึ่ง</option>
                             <option value="2">สอง</option>
@@ -154,6 +161,11 @@
             bsCustomFileInput.init();
         });
         $(function () {
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            })
+        });
+        $(function () {
             //Date picker
             $('#reservationdate').datetimepicker({
                 format: 'L'
@@ -162,6 +174,24 @@
             $('#reservationdate1').datetimepicker({
                 format: 'L'
             });
+        });
+        $("#addRow").click(function () {
+            var html = '';
+            html += '<div id="inputFormRow">';
+            html += '<div class="input-group mb-3">';
+            html += '<input type="text" name="Name[]" class="form-control m-input" placeholder="ชื่อ - สกุล" autocomplete="off">';
+            html += '<input type="text" name="Rank[]" class="form-control m-input" placeholder="ตำแหน่ง" autocomplete="off">';
+            html += '<div class="input-group-append">';
+            html += '<button id="removeRow" type="button" class="btn btn-danger">Remove</button>';
+            html += '</div>';
+            html += '</div>';
+
+            $('#newRow').append(html);
+        });
+
+        // remove row
+        $(document).on('click', '#removeRow', function () {
+            $(this).closest('#inputFormRow').remove();
         });
     </script>
 }
