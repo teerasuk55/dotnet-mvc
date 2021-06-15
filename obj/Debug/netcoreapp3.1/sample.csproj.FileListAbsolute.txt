@@ -43,3 +43,5 @@ D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Adminform.cshtml.g.cs
 D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Form.cshtml.g.cs
 D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Manageuser.cshtml.g.cs
 D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Adduser.cshtml.g.cs
+D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Manageform.cshtml.g.cs
+D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edituser.cshtml.g.cs

@@ -1,12 +1,15 @@
 @{
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
-    ViewData["Title"] = "Adduser";   
+    ViewData["Title"] = "Edituser";   
 }
 
     &nbsp&nbsp
     <div class="card ">
             <div class="card-header">
-                <h3 class="card-title">แบบฟอร์มเพิ่มข้อมูลผู้ใช้</h3>
+                <h3 class="card-title">แบบฟอร์มแก้ไขข้อมูลผู้ใช้</h3>
+                <div class="d-flex justify-content-end">
+                    <a class="btn btn-warning btn-sm text-white">ลบข้อมูลผู้ใช้</a>
+                </div>
             </div>
             <form>
                 <div class="card-body">
@@ -126,5 +129,4 @@
             })
         });
     </script>
-
 }

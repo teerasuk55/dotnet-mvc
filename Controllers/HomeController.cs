@@ -55,6 +55,21 @@ namespace sample.Controllers
             return View();
         }
 
+        public IActionResult Adduser()
+        {
+            return View();
+        }
+
+        public IActionResult Edituser()
+        {
+            return View();
+        }
+
+        public IActionResult Manageform()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
