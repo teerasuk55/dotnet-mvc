@@ -1,33 +1,30 @@
 @{
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
-    ViewData["Title"] = "Edituser";   
+    ViewData["Title"] = "Profile";   
 }
 
     &nbsp&nbsp
     <div class="card ">
             <div class="card-header">
-                <h3 class="card-title">แบบฟอร์มแก้ไขข้อมูลผู้ใช้</h3>
-                <div class="d-flex justify-content-end">
-                    <a class="btn btn-warning btn-sm text-white">ลบข้อมูลผู้ใช้</a>
-                </div>
+                <h3 class="card-title">โปรไฟล์</h3>
             </div>
             <form>
                 <div class="card-body">
                     <div class="form-group">
                         <label for="Name">ชื่อ</label>
-                        <input type="text" class="form-control" id="Name" placeholder="ชื่อ" >
+                        <input type="text" class="form-control" id="Name" placeholder="ชื่อ" disabled>
                     </div>
                     <div class="form-group">
                         <label for="Surname">นามสกุล</label>
-                        <input type="text" class="form-control" id="Surname" placeholder="นามสกุล">
+                        <input type="text" class="form-control" id="Surname" placeholder="นามสกุล" disabled>
                     </div>
                     <div class="form-group">
                         <label for="Department">สาขาวิชา</label>
-                        <input type="text" class="form-control" id="Department" placeholder="สาขาวิชา">
+                        <input type="text" class="form-control" id="Department" placeholder="สาขาวิชา" disabled>
                     </div>
                     <div class="form-group">
                         <label for="email">อีเมล</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder="อีเมล">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="อีเมล" disabled>
                     </div>
                     <div class="form-group">
                         <label for="Rank">ตำแหน่งทางวิชาการ</label>
@@ -52,13 +49,6 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="Status">สถานะ</label>
-                        <select class="form-control select2bs4" name="Status" id="Status" style="width: 100%;">
-                            <option value="admin">Admin</option>
-                            <option value="user">User</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="exampleInputFile">เพิ่มลายเซ็น</label>
                         <div class="input-group">
                             <div class="custom-file">
@@ -71,7 +61,7 @@
             </form>
             <div class="card-footer">
                 <button type="submit" class="btn btn-success" href="#">บันทึก</button>
-                <a class="btn btn-danger" asp-controller="Home" asp-action="Manageuser">ยกเลิก</a>
+                <a class="btn btn-danger" asp-controller="Home" asp-action="History">ยกเลิก</a>
             </div>
         </div>
 

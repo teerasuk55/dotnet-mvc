@@ -1,12 +1,15 @@
 @{
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
-    ViewData["Title"] = "Editform";  
+    ViewData["Title"] = "Editformadmin";  
 }
 
         &nbsp&nbsp
         <div class="card ">
             <div class="card-header">
                 <h3 class="card-title">แบบฟอร์มคำขออนุมัติไปปฏิบัติงานโดยไม่ขอเบิกค่าใช้จ่าย</h3>
+                <div class="d-flex justify-content-end">
+                    <a type="submit" class="btn btn-warning btn-sm text-white"><i class="fas fa-window-close"></i>  ยกเลิกแบบฟอร์ม</a>
+                </div>
             </div>
             <form>
                 <div class="card-body">
@@ -112,7 +115,7 @@
             </form>
             <div class="card-footer">
                 <button type="submit" class="btn btn-success" href="#">บันทึก</button>
-                <a class="btn btn-danger" asp-controller="Home" asp-action="History">ยกเลิก</a>
+                <a class="btn btn-danger" asp-controller="Home" asp-action="Manageform">ยกเลิก</a>
             </div>
         </div>
 
