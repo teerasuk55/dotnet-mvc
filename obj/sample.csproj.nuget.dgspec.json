@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\sample\\sample.csproj": {}
+    "D:\\dotnet-mvc-master\\sample.csproj": {}
   },
   "projects": {
-    "D:\\sample\\sample.csproj": {
+    "D:\\dotnet-mvc-master\\sample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sample\\sample.csproj",
+        "projectUniqueName": "D:\\dotnet-mvc-master\\sample.csproj",
         "projectName": "sample",
-        "projectPath": "D:\\sample\\sample.csproj",
+        "projectPath": "D:\\dotnet-mvc-master\\sample.csproj",
         "packagesPath": "C:\\Users\\Tee Teerasuk\\.nuget\\packages\\",
-        "outputPath": "D:\\sample\\obj\\",
+        "outputPath": "D:\\dotnet-mvc-master\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tee Teerasuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,20 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

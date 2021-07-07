@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using dotnet_mvc_master.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using sample.Data;
 using sample.Models;
 
 namespace sample.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly DatabaseContext databaseContext;
+
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(DatabaseContext databaseContext,ILogger<HomeController> logger)
         {
+            this.databaseContext = databaseContext;
             _logger = logger;
         }
 
@@ -32,12 +37,41 @@ namespace sample.Controllers
         }
         public IActionResult Addform()
         {
-            return View();
+            var data = new FormViewModels{
+                Provinces = databaseContext.Provinces.ToList(),
+            };
+            return View(data);
+        }
+
+        [HttpPost]
+        public IActionResult GetDistrict(int provinceId)
+        {
+            var data = new FormViewModels();
+            var districts = databaseContext.Districts.Where(w=>w.ProvinceId == provinceId).ToList();
+
+            data = new FormViewModels{
+                Districts = districts,
+            };
+            data.msg = "Hello";
+            return Json(data);
+        }
+
+        [HttpPost]
+        public IActionResult Subdistricts(int districtsId)
+        {
+            var subdistricts = databaseContext.Subdistricts.Where(w=>w.DistrictId == districtsId).ToList();
+            var data = new FormViewModels{
+                Subdistricts = subdistricts,
+            };
+            return Json(data);
         }
 
         public IActionResult Editform()
         {
-            return View();
+            var data = new FormViewModels{
+                Provinces = databaseContext.Provinces.ToList(),
+            };
+            return View(data);
         }
 
         public IActionResult Endform()

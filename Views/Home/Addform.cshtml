@@ -2,6 +2,8 @@
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
     ViewData["Title"] = "Addform";
 }
+@model dotnet_mvc_master.ViewModels.FormViewModels
+
 &nbsp&nbsp
 <div class="card ">
     <div class="card-header">
@@ -11,7 +13,7 @@
         <div class="card-body">
             <div class="form-group">
                 <label for="Number">หมายเลขเอกสารที่</label>
-                <input type="text" class="form-control" id="Number" placeholder="หมายเลขเอกสารที่" disabled>
+                <input type="text" class="form-control" id="Number" placeholder="หมายเลขเอกสารที่">
             </div>
             <div class="form-group">
                 <label for="Name">รายชื่อ</label>
@@ -26,49 +28,35 @@
                         </div>
                     </div>
                 </div>
-
                 <div id="newRow"></div>
                 <button id="addRow" type="button" class="btn btn-info">Add Row</button>
             </div>
-            @* <div class="form-group">
-                <label for="Rank">ตำแหน่ง</label>
-                <input type="text" class="form-control" id="Rank" placeholder="ตำแหน่ง">
-                </div> *@
             <div class="form-group">
                 <label for="Where">เดินทางไปปฏิบัติงานที่</label>
                 <input type="text" name="Where" class="form-control" id="Where" placeholder="เดินทางไปปฏิบัติงานที่">
             </div>
             <div class="form-group">
                 <label for="Province">จังหวัด</label>
-                <select class="form-control select2bs4" name="Province" id="Province" style="width: 100%;">
+                <select class="form-control select2bs4" onchange="GetDistrict(this);" name="Province" id="Province"
+                    style="width: 100%;">
                     <option selected>เลือกจังหวัด...</option>
-                    <option value="1">หนึ่ง</option>
-                    <option value="2">สอง</option>
-                    <option value="3">สาม</option>
-                    <option value="4">สี่</option>
-                    <option value="5">ห้า</option>
+                    @foreach (var result in Model.Provinces)
+                    {
+                        <option value="@result.Id">@result.NameInThai</option>
+                    }
                 </select>
             </div>
             <div class="form-group">
                 <label for="District">อำเภอ</label>
-                <select class="form-control select2bs4" name="District" id="District" style="width: 100%;">
+                <select class="form-control select2bs4" onchange="GetTumbon(this);" name="District" id="District"
+                    style="width: 100%;">
                     <option selected>เลือกอำเภอ...</option>
-                    <option value="1">หนึ่ง</option>
-                    <option value="2">สอง</option>
-                    <option value="3">สาม</option>
-                    <option value="4">สี่</option>
-                    <option value="5">ห้า</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="Tumbon">ตำบล</label>
                 <select class="form-control select2bs4" name="Tumbon" id="Tumbon" style="width: 100%;">
                     <option selected>เลือกตำบล...</option>
-                    <option value="1">หนึ่ง</option>
-                    <option value="2">สอง</option>
-                    <option value="3">สาม</option>
-                    <option value="4">สี่</option>
-                    <option value="5">ห้า</option>
                 </select>
             </div>
             <div class="form-group">
@@ -122,48 +110,48 @@
 </div>
 @section Styles
 {
-<!-- daterange picker -->
-<link rel="stylesheet" href="~/adminlte/plugins/daterangepicker/daterangepicker.css">
-<!-- iCheck for checkboxes and radio inputs -->
-<link rel="stylesheet" href="~/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.css">
-<!-- Bootstrap Color Picker -->
-<link rel="stylesheet" href="~/adminlte/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
-<!-- Tempusdominus Bootstrap 4 -->
-<link rel="stylesheet" href="~/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-<!-- Select2 -->
-<link rel="stylesheet" href="~/adminlte/plugins/select2/css/select2.min.css">
-<link rel="stylesheet" href="~/adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-<!-- Bootstrap4 Duallistbox -->
-<link rel="stylesheet" href="~/adminlte/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
-<!-- BS Stepper -->
-<link rel="stylesheet" href="~/adminlte/plugins/bs-stepper/css/bs-stepper.min.css">
-<!-- dropzonejs -->
-<link rel="stylesheet" href="~/adminlte/plugins/dropzone/min/dropzone.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="~/adminlte/plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="~/adminlte/plugins/icheck-bootstrap/icheck-bootstrap.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="~/adminlte/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="~/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/adminlte/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/adminlte/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="~/adminlte/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="~/adminlte/plugins/bs-stepper/css/bs-stepper.min.css">
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="~/adminlte/plugins/dropzone/min/dropzone.min.css">
 }
 
 @section Scripts
 {
-<!-- bs-custom-file-input -->
-<script src="~/adminlte/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-<!-- Select2 -->
-<script src="~/adminlte/plugins/select2/js/select2.full.min.js"></script>
-<!-- Bootstrap4 Duallistbox -->
-<script src="~/adminlte/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
-<!-- InputMask -->
-<script src="~/adminlte/plugins/moment/moment.min.js"></script>
-<script src="~/adminlte/plugins/inputmask/jquery.inputmask.min.js"></script>
-<!-- date-range-picker -->
-<script src="~/adminlte/plugins/daterangepicker/daterangepicker.js"></script>
-<!-- bootstrap color picker -->
-<script src="~/adminlte/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="~/adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Bootstrap Switch -->
-<script src="~/adminlte/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-<!-- BS-Stepper -->
-<script src="~/adminlte/plugins/moment/moment.min.js"></script>
-<!-- dropzonejs -->
-<script src="~/adminlte/plugins/dropzone/min/dropzone.min.js"></script>
+    <!-- bs-custom-file-input -->
+    <script src="~/adminlte/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <!-- Select2 -->
+    <script src="~/adminlte/plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="~/adminlte/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="~/adminlte/plugins/moment/moment.min.js"></script>
+    <script src="~/adminlte/plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="~/adminlte/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="~/adminlte/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="~/adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="~/adminlte/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="~/adminlte/plugins/moment/moment.min.js"></script>
+    <!-- dropzonejs -->
+    <script src="~/adminlte/plugins/dropzone/min/dropzone.min.js"></script>
 <script>
 
     $(function () {
@@ -184,7 +172,7 @@
         });
 
         $("#reservationdate").on("change.datetimepicker", function (e) {
-            $('#reservationdate1').datetimepicker('minDate', e.date);
+            //$('#reservationdate1').datetimepicker('minDate', e.date);
 
         });
         $("#reservationdate1").on("change.datetimepicker", function (e) {
@@ -203,6 +191,61 @@
         const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
 
         $('.days-here').val(diffInDays);
+    }
+
+    function GetDistrict(v) {
+
+        var amphureObject = $("#District");
+        $("#District").empty();
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("GetDistrict","Home")",
+            data: { provinceId: v.value },
+            dataType: "json",
+            success: function (data) {
+
+                //console.log(data.districts);
+                var result = data.districts;
+                $.each(result, function (index, item) {
+                    //console.log(item.id);
+                    $('#District').append($('<option>').val(item.id).text(item.nameInThai));
+                });
+            },
+            error: function (req, status, error) {
+                alert(error);
+            }
+        });
+
+    }
+
+    function GetTumbon(v) {
+
+        //alert(v.value)
+        var amphureObject = $("#District");
+        var districtObject = $("#Tumbon");
+        //$("#District").empty();
+        $("#Tumbon").empty();
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("Subdistricts","Home")",
+            data: { districtsId: v.value },
+            dataType: "json",
+            success: function (data) {
+
+                //console.log(data.districts);
+                var result = data.subdistricts;
+                $.each(result, function (index, item) {
+                    //console.log(item.id);
+                    $('#Tumbon').append($('<option>').val(item.id).text(item.nameInThai));
+                });
+
+
+            },
+            error: function (req, status, error) {
+                alert(error);
+            }
+        });
+
     }
 
     $("#addRow").click(function () {

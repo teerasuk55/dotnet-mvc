@@ -47,3 +47,121 @@ D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Manageform.cshtml.g.cs
 D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edituser.cshtml.g.cs
 D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Editformadmin.cshtml.g.cs
 D:\sample\obj\Debug\netcoreapp3.1\Razor\Views\Home\Profile.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.exe
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.deps.json
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.runtimeconfig.json
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.runtimeconfig.dev.json
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.pdb
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.Views.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.Views.pdb
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.csproj.AssemblyReference.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.AssemblyInfoInputs.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.AssemblyInfo.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.csproj.CoreCompileInputs.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorAssemblyInfo.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorAssemblyInfo.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\staticwebassets\sample.StaticWebAssets.Manifest.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\staticwebassets\sample.StaticWebAssets.xml
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\scopedcss\bundle\sample.styles.css
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.TagHelpers.input.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.TagHelpers.output.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorCoreGenerate.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Addform.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Adduser.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Adminform.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Editform.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Editformadmin.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edituser.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Endform.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Form.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\History.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Manageform.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Manageuser.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Profile.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutUser.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorTargetAssemblyInfo.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorTargetAssemblyInfo.cs
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.Views.pdb
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.pdb
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.genruntimeconfig.cache
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.csproj.CopyComplete
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Benjaporn\Desktop\Intern\New folder\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\appsettings.json
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.exe
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.deps.json
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.runtimeconfig.json
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.runtimeconfig.dev.json
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.pdb
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.Views.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\sample.Views.pdb
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+D:\dotnet-mvc-master\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.csprojAssemblyReference.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.AssemblyInfoInputs.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.AssemblyInfo.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.csproj.CoreCompileInputs.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.MvcApplicationPartsAssemblyInfo.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorAssemblyInfo.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorAssemblyInfo.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.TagHelpers.input.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.TagHelpers.output.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorCoreGenerate.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Addform.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Adduser.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Adminform.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Editform.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Editformadmin.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edituser.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Endform.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Form.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\History.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Manageform.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Manageuser.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Home\Profile.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutUser.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorTargetAssemblyInfo.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.RazorTargetAssemblyInfo.cs
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.Views.pdb
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.csproj.CopyComplete
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\staticwebassets\sample.StaticWebAssets.Manifest.cache
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\staticwebassets\sample.StaticWebAssets.xml
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.dll
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.pdb
+D:\dotnet-mvc-master\obj\Debug\netcoreapp3.1\sample.genruntimeconfig.cache

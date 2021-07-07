@@ -1,121 +1,113 @@
 @{
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
-    ViewData["Title"] = "Editform";  
+    ViewData["Title"] = "Editform";
 }
+@model dotnet_mvc_master.ViewModels.FormViewModels
 
-        &nbsp&nbsp
-        <div class="card ">
-            <div class="card-header">
-                <h3 class="card-title">แบบฟอร์มคำขออนุมัติไปปฏิบัติงานโดยไม่ขอเบิกค่าใช้จ่าย</h3>
+&nbsp&nbsp
+<div class="card ">
+    <div class="card-header">
+        <h3 class="card-title">แบบฟอร์มคำขออนุมัติไปปฏิบัติงานโดยไม่ขอเบิกค่าใช้จ่าย</h3>
+    </div>
+    <form>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="Number">หมายเลขเอกสารที่</label>
+                <input type="text" class="form-control" id="Number" placeholder="หมายเลขเอกสารที่">
             </div>
-            <form>
-                <div class="card-body">
-                    <div class="form-group">
-                        <label for="Number">หมายเลขเอกสารที่</label>
-                        <input type="text" class="form-control" id="Number" placeholder="หมายเลขเอกสารที่" disabled>
-                    </div>
-                    <div class="form-group">
-                        <label for="Name">รายชื่อ</label>
-                        <div id="inputFormRow">
-                            <div class="input-group mb-2">
-                                <input type="text" name="Name[]" class="form-control m-input" placeholder="ชื่อ - สกุล" autocomplete="off">
-                                <input type="text" name="Rank[]" class="form-control m-input" placeholder="ตำแหน่งทางวิชาการ" autocomplete="off">
-                                <div class="input-group-append">                
-                                    <button id="removeRow" type="button" class="btn btn-danger">Remove</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="newRow"></div>
-                        <button id="addRow" type="button" class="btn btn-info">Add Row</button>
-                    </div>
-                    <div class="form-group">
-                        <label for="Where">เดินทางไปปฏิบัติงานที่</label>
-                        <input type="text" class="form-control" id="Where" placeholder="เดินทางไปปฏิบัติงานที่">
-                    </div>
-                    <div class="form-group">
-                        <label for="Province">จังหวัด</label>
-                        <select class="form-control select2bs4" id="Province" style="width: 100%;">
-                            <option selected>เลือกจังหวัด...</option>
-                            <option value="1">หนึ่ง</option>
-                            <option value="2">สอง</option>
-                            <option value="3">สาม</option>
-                            <option value="4">สี่</option>
-                            <option value="5">ห้า</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="District">อำเภอ</label>
-                        <select class="form-control select2bs4" id="District" style="width: 100%;">
-                            <option selected>เลือกอำเภอ...</option>
-                            <option value="1">หนึ่ง</option>
-                            <option value="2">สอง</option>
-                            <option value="3">สาม</option>
-                            <option value="4">สี่</option>
-                            <option value="5">ห้า</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="Tumbon">ตำบล</label>
-                        <select class="form-control select2bs4" id="Tumbon" style="width: 100%;">
-                            <option selected>เลือกตำบล...</option>
-                            <option value="1">หนึ่ง</option>
-                            <option value="2">สอง</option>
-                            <option value="3">สาม</option>
-                            <option value="4">สี่</option>
-                            <option value="5">ห้า</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>ตั้งแต่วันที่(เดือน/วัน/ปี)</label>
-                        <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate" placeholder="เดือน/วัน/ปี"/>
-                            <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
-                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>ถึงวันที่(เดือน/วัน/ปี)</label>
-                        <div class="input-group date" id="reservationdate1" data-target-input="nearest">
-                            <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate1" placeholder="เดือน/วัน/ปี"/>
-                            <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
-                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="Total">รวมเป็นเวลา</label>
-                        <div class="input-group">
-                            <input type="text" name="Total" class="form-control" id="Total" placeholder="รวมเป็นเวลา">
+            <div class="form-group">
+                <label for="Name">รายชื่อ</label>
+                <div id="inputFormRow">
+                    <div class="input-group mb-2">
+                        <input type="text" name="Name[]" class="form-control m-input" placeholder="ชื่อ - สกุล"
+                            autocomplete="off">
+                        <input type="text" name="Rank[]" class="form-control m-input" placeholder="ตำแหน่ง"
+                            autocomplete="off">
                         <div class="input-group-append">
-                            <span class="input-group-text">วัน</span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="Reason">เหตุผล</label>
-                        <input type="text" class="form-control" id="Reason" placeholder="เหตุผล">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputFile">เอกสารเพิ่มเติม</label>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="exampleInputFile">
-                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                            </div>
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button"><i class="fa fa-download"></i>Download</button>
-                            </div>
+                            <button id="removeRow" type="button" class="btn btn-danger">Remove</button>
                         </div>
                     </div>
                 </div>
-            </form>
-            <div class="card-footer">
-                <button type="submit" class="btn btn-success" href="#">บันทึก</button>
-                <a class="btn btn-danger" asp-controller="Home" asp-action="History">ยกเลิก</a>
+                <div id="newRow"></div>
+                <button id="addRow" type="button" class="btn btn-info">Add Row</button>
             </div>
-        </div>
-
+            <div class="form-group">
+                <label for="Where">เดินทางไปปฏิบัติงานที่</label>
+                <input type="text" name="Where" class="form-control" id="Where" placeholder="เดินทางไปปฏิบัติงานที่">
+            </div>
+            <div class="form-group">
+                <label for="Province">จังหวัด</label>
+                <select class="form-control select2bs4" onchange="GetDistrict(this);" name="Province" id="Province"
+                    style="width: 100%;">
+                    <option selected>เลือกจังหวัด...</option>
+                    @foreach (var result in Model.Provinces)
+                    {
+                        <option value="@result.Id">@result.NameInThai</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="District">อำเภอ</label>
+                <select class="form-control select2bs4" onchange="GetTumbon(this);" name="District" id="District"
+                    style="width: 100%;">
+                    <option selected>เลือกอำเภอ...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Tumbon">ตำบล</label>
+                <select class="form-control select2bs4" name="Tumbon" id="Tumbon" style="width: 100%;">
+                    <option selected>เลือกตำบล...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>ตั้งแต่วันที่(วัน-เดือน-ปี)</label>
+                <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                    <input type="text" name="reservationdate" class="form-control datetimepicker-input starttime"
+                        data-target="#reservationdate" placeholder="วัน-เดือน-ปี" />
+                    <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>ถึงวันที่(วัน-เดือน-ปี)</label>
+                <div class="input-group date" id="reservationdate1" data-target-input="nearest">
+                    <input type="text" name="reservationdate1" class="form-control datetimepicker-input endtime"
+                        data-target="#reservationdate1" placeholder="วัน-เดือน-ปี" />
+                    <div class="input-group-append" data-target="#reservationdate1" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Total">ระยะเวลา</label>
+                <div class="input-group">
+                    <input type="number" min="1" max="5" id="Total" name="Total" style='background-color : #ffff; '
+                        disabled class="form-control days-here" placeholder="รวมเป็นเวลา">
+                    <div class="input-group-append">
+                        <span class="input-group-text">วัน</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Reason">เหตุผล</label>
+                    <textarea class="form-control" name="Reason" id="Reason" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">เอกสารเพิ่มเติม</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+    <div class="card-footer">
+        <button type="submit" class="btn btn-success">บันทึก</button>
+        <a class="btn btn-danger" asp-controller="Home" asp-action="History">ยกเลิก</a>
+    </div>
+</div>
 @section Styles
 {
     <!-- daterange picker -->
@@ -157,45 +149,126 @@
     <!-- Bootstrap Switch -->
     <script src="~/adminlte/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
     <!-- BS-Stepper -->
-    <script src="~/adminlte/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+    <script src="~/adminlte/plugins/moment/moment.min.js"></script>
     <!-- dropzonejs -->
     <script src="~/adminlte/plugins/dropzone/min/dropzone.min.js"></script>
-    <script>
-        $(function () {
-            bsCustomFileInput.init();
-        });
-        $(function () {
-            $('.select2bs4').select2({
-                theme: 'bootstrap4'
-            })
-        });
-        $(function () {
-            //Date picker
-            $('#reservationdate').datetimepicker({
-                format: 'L'
-            });
-            //Date picker 1
-            $('#reservationdate1').datetimepicker({
-                format: 'L'
-            });
-        });
-        $("#addRow").click(function () {
-            var html = '';
-            html += '<div id="inputFormRow">';
-            html += '<div class="input-group mb-3">';
-            html += '<input type="text" name="Name[]" class="form-control m-input" placeholder="ชื่อ - สกุล" autocomplete="off">';
-            html += '<input type="text" name="Rank[]" class="form-control m-input" placeholder="ตำแหน่ง" autocomplete="off">';
-            html += '<div class="input-group-append">';
-            html += '<button id="removeRow" type="button" class="btn btn-danger">Remove</button>';
-            html += '</div>';
-            html += '</div>';
+<script>
 
-            $('#newRow').append(html);
+    $(function () {
+
+        bsCustomFileInput.init();
+
+        $('.select2bs4').select2({
+            theme: 'bootstrap4'
+        })
+        //Date picker
+        $('#reservationdate').datetimepicker({
+            format: 'L'
+
+        });
+        //Date picker 1
+        $('#reservationdate1').datetimepicker({
+            format: 'L'
         });
 
-        // remove row
-        $(document).on('click', '#removeRow', function () {
-            $(this).closest('#inputFormRow').remove();
+        $("#reservationdate").on("change.datetimepicker", function (e) {
+            //$('#reservationdate1').datetimepicker('minDate', e.date);
+
         });
-    </script>
+        $("#reservationdate1").on("change.datetimepicker", function (e) {
+            $('#reservationdate').datetimepicker('maxDate', e.date);
+            CalcDiff()
+        });
+
+
+    });
+    function CalcDiff() {
+        const startDate = $('.starttime').val();
+        const endDate = $('.endtime').val();
+
+
+        const diffInMs = new Date(endDate) - new Date(startDate)
+        const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
+
+        $('.days-here').val(diffInDays);
+    }
+
+    function GetDistrict(v) {
+
+        var amphureObject = $("#District");
+        $("#District").empty();
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("GetDistrict","Home")",
+            data: { provinceId: v.value },
+            dataType: "json",
+            success: function (data) {
+
+                //console.log(data.districts);
+                var result = data.districts;
+                $.each(result, function (index, item) {
+                    //console.log(item.id);
+                    $('#District').append($('<option>').val(item.id).text(item.nameInThai));
+                });
+            },
+            error: function (req, status, error) {
+                alert(error);
+            }
+        });
+
+    }
+
+    function GetTumbon(v) {
+
+        //alert(v.value)
+        var amphureObject = $("#District");
+        var districtObject = $("#Tumbon");
+        //$("#District").empty();
+        $("#Tumbon").empty();
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("Subdistricts","Home")",
+            data: { districtsId: v.value },
+            dataType: "json",
+            success: function (data) {
+
+                //console.log(data.districts);
+                var result = data.subdistricts;
+                $.each(result, function (index, item) {
+                    //console.log(item.id);
+                    $('#Tumbon').append($('<option>').val(item.id).text(item.nameInThai));
+                });
+
+
+            },
+            error: function (req, status, error) {
+                alert(error);
+            }
+        });
+
+    }
+
+    $("#addRow").click(function () {
+        var html = '';
+        html += '<div id="inputFormRow">';
+        html += '<div class="input-group mb-3">';
+        html += '<input type="text" name="Name[]" class="form-control m-input" placeholder="ชื่อ - สกุล" autocomplete="off">';
+        html += '<input type="text" name="Rank[]" class="form-control m-input" placeholder="ตำแหน่ง" autocomplete="off">';
+        html += '<div class="input-group-append">';
+        html += '<button id="removeRow" type="button" class="btn btn-danger">Remove</button>';
+        html += '</div>';
+        html += '</div>';
+
+        $('#newRow').append(html);
+    });
+
+    // remove row
+    $(document).on('click', '#removeRow', function () {
+        $(this).closest('#inputFormRow').remove();
+    });
+
+
+
+</script>
+
 }
